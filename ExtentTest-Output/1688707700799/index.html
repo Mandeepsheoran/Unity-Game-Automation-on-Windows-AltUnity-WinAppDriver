@@ -1,0 +1,2602 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>ExtentReport</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">IGT Test Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jul 7, 2023 09:28:20 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('device-view')">
+<a id="nav-device" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tablet"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Mike</a><a class="dropdown-item" href="#">John</a><a class="dropdown-item" href="#">Mandeep</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">QUICKREGRESSION</a><a class="dropdown-item" href="#">REGRESSION</a><a class="dropdown-item" href="#">SMOKE</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tablet"></i></a>
+<ul id="device-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">DESKTOP</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author="Mandeep"
+          tag="SMOKE"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Launch TrashCat app</p>
+            <p class="text-sm">
+              <span>9:28:20 AM</span> / <span>00:00:03:285</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Launch TrashCat app</h5>
+<span class='badge badge-success'>07.07.2023 9:28:20 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:28:24 AM</span>
+<span class='badge badge-default'>00:00:03:285</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:28:24 AM</td>
+        <td>
+          <span class='badge white-text green'>trashCatAppLaunch is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify Pause and Resume feature</p>
+            <p class="text-sm">
+              <span>9:28:52 AM</span> / <span>00:00:00:340</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify Pause and Resume feature</h5>
+<span class='badge badge-success'>07.07.2023 9:28:52 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:28:52 AM</span>
+<span class='badge badge-default'>00:00:00:340</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:52 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="Mandeep"
+          tag="SMOKE"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Verify Pause and Resume feature</p>
+            <p class="text-sm">
+              <span>9:28:53 AM</span> / <span>00:00:01:094</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify Pause and Resume feature</h5>
+<span class='badge badge-success'>07.07.2023 9:28:53 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:28:54 AM</span>
+<span class='badge badge-default'>00:00:01:094</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:53 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@63b3ee82</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:53 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:53 AM</td>
+        <td>
+          <span class='badge white-text blue'>Game is paused</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:54 AM</td>
+        <td>
+          <span class='badge white-text blue'>Title of the element is :PAUSED</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:54 AM</td>
+        <td>
+          <span class='badge white-text blue'>Game is resumed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:28:54 AM</td>
+        <td>
+          <span class='badge white-text green'>testGameCanBePausedAndResumed is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check game pause and stop</p>
+            <p class="text-sm">
+              <span>9:28:54 AM</span> / <span>00:00:00:321</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check game pause and stop</h5>
+<span class='badge badge-success'>07.07.2023 9:28:54 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:28:54 AM</span>
+<span class='badge badge-default'>00:00:00:321</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:54 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author="Mandeep"
+          tag="SMOKE"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Check game pause and stop</p>
+            <p class="text-sm">
+              <span>9:28:55 AM</span> / <span>00:00:00:973</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check game pause and stop</h5>
+<span class='badge badge-success'>07.07.2023 9:28:55 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:28:56 AM</span>
+<span class='badge badge-default'>00:00:00:973</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:55 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@52169758</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:55 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:55 AM</td>
+        <td>
+          <span class='badge white-text blue'>Game is paused</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:56 AM</td>
+        <td>
+          <span class='badge white-text blue'>Title of the element is :PAUSED</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:56 AM</td>
+        <td>
+          <span class='badge white-text blue'>Main menu is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:28:56 AM</td>
+        <td>
+          <span class='badge white-text green'>testGameCanBePausedAndStopped is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Verify if user can avoid the obstacles</p>
+            <p class="text-sm">
+              <span>9:28:56 AM</span> / <span>00:00:00:319</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify if user can avoid the obstacles</h5>
+<span class='badge badge-success'>07.07.2023 9:28:56 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:28:56 AM</span>
+<span class='badge badge-default'>00:00:00:319</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:56 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author="Mandeep"
+          tag="SMOKE"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Verify if user can avoid the obstacles</p>
+            <p class="text-sm">
+              <span>9:28:57 AM</span> / <span>00:00:00:430</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Verify if user can avoid the obstacles</h5>
+<span class='badge badge-success'>07.07.2023 9:28:57 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:28:57 AM</span>
+<span class='badge badge-default'>00:00:00:430</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:57 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@6b4283c4</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:57 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:57 AM</td>
+        <td>
+          <span class='badge white-text blue'>Looking for obstacles.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:28:57 AM</td>
+        <td>
+          <span class='badge white-text green'>testAvoidingObstacles is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Test without avoiding obstacles</p>
+            <p class="text-sm">
+              <span>9:28:57 AM</span> / <span>00:00:00:324</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test without avoiding obstacles</h5>
+<span class='badge badge-success'>07.07.2023 9:28:57 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:28:58 AM</span>
+<span class='badge badge-default'>00:00:00:324</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:58 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author="Mandeep"
+          tag="REGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Test without avoiding obstacles</p>
+            <p class="text-sm">
+              <span>9:28:58 AM</span> / <span>00:00:21:287</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Test without avoiding obstacles</h5>
+<span class='badge badge-success'>07.07.2023 9:28:58 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:20 AM</span>
+<span class='badge badge-default'>00:00:21:287</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:58 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@103082dd</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:28:58 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:19 AM</td>
+        <td>
+          <span class='badge white-text blue'>Available currency with user is :0</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:20 AM</td>
+        <td>
+          <span class='badge white-text green'>testWithoutAvoidingObstacles is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check game start functionality</p>
+            <p class="text-sm">
+              <span>9:29:20 AM</span> / <span>00:00:00:321</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check game start functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:29:20 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:20 AM</span>
+<span class='badge badge-default'>00:00:00:321</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:20 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author="Mandeep"
+          tag="SMOKE"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Check game start functionality</p>
+            <p class="text-sm">
+              <span>9:29:20 AM</span> / <span>00:00:15:548</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check game start functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:29:20 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:36 AM</span>
+<span class='badge badge-default'>00:00:15:548</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:20 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@67efd2c2</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:21 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:36 AM</td>
+        <td>
+          <span class='badge white-text green'>testGamePlayDisplayedCorrectly is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Play with obstacle in line</p>
+            <p class="text-sm">
+              <span>9:29:36 AM</span> / <span>00:00:00:335</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Play with obstacle in line</h5>
+<span class='badge badge-success'>07.07.2023 9:29:36 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:36 AM</span>
+<span class='badge badge-default'>00:00:00:335</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:36 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author="John"
+          tag="QUICKREGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Play with obstacle in line</p>
+            <p class="text-sm">
+              <span>9:29:37 AM</span> / <span>00:00:00:436</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Play with obstacle in line</h5>
+<span class='badge badge-success'>07.07.2023 9:29:37 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:37 AM</span>
+<span class='badge badge-default'>00:00:00:436</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">John</span>
+<span class="badge badge-pill badge-default">QUICKREGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:37 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@51c959a4</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:37 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:37 AM</td>
+        <td>
+          <span class='badge white-text blue'>Looking for obstacles.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:37 AM</td>
+        <td>
+          <span class='badge white-text green'>testAvoidingObstacles is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Resume and Pause in reply</p>
+            <p class="text-sm">
+              <span>9:29:37 AM</span> / <span>00:00:00:326</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Resume and Pause in reply</h5>
+<span class='badge badge-success'>07.07.2023 9:29:37 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:38 AM</span>
+<span class='badge badge-default'>00:00:00:326</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:38 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author="Mike"
+          tag="QUICKREGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Resume and Pause in reply</p>
+            <p class="text-sm">
+              <span>9:29:39 AM</span> / <span>00:00:00:976</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Resume and Pause in reply</h5>
+<span class='badge badge-success'>07.07.2023 9:29:39 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:40 AM</span>
+<span class='badge badge-default'>00:00:00:976</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mike</span>
+<span class="badge badge-pill badge-default">QUICKREGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:39 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@31ee2fdb</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:39 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:39 AM</td>
+        <td>
+          <span class='badge white-text blue'>Game is paused</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:39 AM</td>
+        <td>
+          <span class='badge white-text blue'>Title of the element is :PAUSED</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:40 AM</td>
+        <td>
+          <span class='badge white-text blue'>Game is resumed</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:40 AM</td>
+        <td>
+          <span class='badge white-text green'>testGameCanBePausedAndResumed is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Game stop functionality</p>
+            <p class="text-sm">
+              <span>9:29:40 AM</span> / <span>00:00:00:349</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Game stop functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:29:40 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:40 AM</span>
+<span class='badge badge-default'>00:00:00:349</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:40 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author="John"
+          tag="REGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Game stop functionality</p>
+            <p class="text-sm">
+              <span>9:29:41 AM</span> / <span>00:00:00:976</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Game stop functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:29:41 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:42 AM</span>
+<span class='badge badge-default'>00:00:00:976</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">John</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:41 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@6920614</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:41 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:41 AM</td>
+        <td>
+          <span class='badge white-text blue'>Game is paused</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:41 AM</td>
+        <td>
+          <span class='badge white-text blue'>Title of the element is :PAUSED</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:42 AM</td>
+        <td>
+          <span class='badge white-text blue'>Main menu is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:42 AM</td>
+        <td>
+          <span class='badge white-text green'>testGameCanBePausedAndStopped is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Game play functionality</p>
+            <p class="text-sm">
+              <span>9:29:42 AM</span> / <span>00:00:00:325</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Game play functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:29:42 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:42 AM</span>
+<span class='badge badge-default'>00:00:00:325</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:42 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author="John"
+          tag="REGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Game play functionality</p>
+            <p class="text-sm">
+              <span>9:29:42 AM</span> / <span>00:00:15:553</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Game play functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:29:42 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:58 AM</span>
+<span class='badge badge-default'>00:00:15:553</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">John</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:42 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@558756be</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:43 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:29:58 AM</td>
+        <td>
+          <span class='badge white-text green'>testGamePlayDisplayedCorrectly is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Without obstacle in line</p>
+            <p class="text-sm">
+              <span>9:29:58 AM</span> / <span>00:00:00:324</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Without obstacle in line</h5>
+<span class='badge badge-success'>07.07.2023 9:29:58 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:29:58 AM</span>
+<span class='badge badge-default'>00:00:00:324</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:58 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author="Mandeep"
+          tag="REGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Without obstacle in line</p>
+            <p class="text-sm">
+              <span>9:29:59 AM</span> / <span>00:00:23:198</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Without obstacle in line</h5>
+<span class='badge badge-success'>07.07.2023 9:29:59 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:22 AM</span>
+<span class='badge badge-default'>00:00:23:198</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:59 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button text is :com.alttester.AltObject@102ecc22</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:29:59 AM</td>
+        <td>
+          <span class='badge white-text blue'>Play button is clicked</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:22 AM</td>
+        <td>
+          <span class='badge white-text blue'>Available currency with user is :0</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:22 AM</td>
+        <td>
+          <span class='badge white-text green'>testPlayerDiesWhenObstacleNotAvoided is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Start button functionality</p>
+            <p class="text-sm">
+              <span>9:30:22 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Start button functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:22 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:22 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author="Mandeep"
+          tag="SMOKE"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Start button functionality</p>
+            <p class="text-sm">
+              <span>9:30:23 AM</span> / <span>00:00:01:518</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Start button functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:23 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:24 AM</span>
+<span class='badge badge-default'>00:00:01:518</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:23 AM</td>
+        <td>
+          <span class='badge white-text blue'>Game run button text is :START</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:23 AM</td>
+        <td>
+          <span class='badge white-text blue'>Start button is clicked.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:23 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:24 AM</td>
+        <td>
+          <span class='badge white-text green'>testStartButtonLoadMainMenu is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Start page functionality</p>
+            <p class="text-sm">
+              <span>9:30:24 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Start page functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:24 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:24 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author="John"
+          tag="SMOKE"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Start page functionality</p>
+            <p class="text-sm">
+              <span>9:30:24 AM</span> / <span>00:00:00:537</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Start page functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:24 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:25 AM</span>
+<span class='badge badge-default'>00:00:00:537</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">John</span>
+<span class="badge badge-pill badge-default">SMOKE</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:25 AM</td>
+        <td>
+          <span class='badge white-text blue'>Game run button text is :START</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:25 AM</td>
+        <td>
+          <span class='badge white-text green'>testStartPageLoadedCorrectly is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Home page load functionality</p>
+            <p class="text-sm">
+              <span>9:30:25 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Home page load functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:25 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:25 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author="Mike"
+          tag="REGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Home page load functionality</p>
+            <p class="text-sm">
+              <span>9:30:25 AM</span> / <span>00:00:00:865</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Home page load functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:25 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:26 AM</span>
+<span class='badge badge-default'>00:00:00:865</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mike</span>
+<span class="badge badge-pill badge-default">REGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:25 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:26 AM</td>
+        <td>
+          <span class='badge white-text green'>TestMainPageLoadedCorrectly is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Shop page loading functionality</p>
+            <p class="text-sm">
+              <span>9:30:26 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Shop page loading functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:26 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:26 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author="Mandeep"
+          tag="QUICKREGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Shop page loading functionality</p>
+            <p class="text-sm">
+              <span>9:30:26 AM</span> / <span>00:00:01:096</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Shop page loading functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:26 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:27 AM</span>
+<span class='badge badge-default'>00:00:01:096</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Mandeep</span>
+<span class="badge badge-pill badge-default">QUICKREGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:27 AM</td>
+        <td>
+          <span class='badge white-text green'>ShopPageLoadedCorrectly is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Premium popup close functionality</p>
+            <p class="text-sm">
+              <span>9:30:27 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Premium popup close functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:27 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:27 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="31"
+          author="John"
+          tag="QUICKREGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Premium popup close functionality</p>
+            <p class="text-sm">
+              <span>9:30:27 AM</span> / <span>00:00:02:998</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Premium popup close functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:27 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:30 AM</span>
+<span class='badge badge-default'>00:00:02:998</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=31</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">John</span>
+<span class="badge badge-pill badge-default">QUICKREGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:27 AM</td>
+        <td>
+          <span class='badge white-text blue'>Premium shop popup is opened.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:28 AM</td>
+        <td>
+          <span class='badge white-text blue'>Premium shop popup is closed.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:30 AM</td>
+        <td>
+          <span class='badge white-text green'>testPremiumPopUpClosed is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="32"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Premium popup functionality</p>
+            <p class="text-sm">
+              <span>9:30:30 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Premium popup functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:30 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:30 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=32</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="33"
+          author="John"
+          tag="QUICKREGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Premium popup functionality</p>
+            <p class="text-sm">
+              <span>9:30:30 AM</span> / <span>00:00:00:440</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Premium popup functionality</h5>
+<span class='badge badge-success'>07.07.2023 9:30:30 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:31 AM</span>
+<span class='badge badge-default'>00:00:00:440</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=33</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">John</span>
+<span class="badge badge-pill badge-default">QUICKREGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:30 AM</td>
+        <td>
+          <span class='badge white-text blue'>Premium shop popup is opened.</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:31 AM</td>
+        <td>
+          <span class='badge white-text green'>testPremiumPopUpOpen is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="34"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Shop page close</p>
+            <p class="text-sm">
+              <span>9:30:31 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Shop page close</h5>
+<span class='badge badge-success'>07.07.2023 9:30:31 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:31 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=34</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="35"
+          author="John"
+          tag="QUICKREGRESSION"
+          device="DESKTOP">
+          <div class="test-detail">
+            <p class="name">Shop page close</p>
+            <p class="text-sm">
+              <span>9:30:31 AM</span> / <span>00:00:02:062</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Shop page close</h5>
+<span class='badge badge-success'>07.07.2023 9:30:31 AM</span>
+<span class='badge badge-danger'>07.07.2023 9:30:33 AM</span>
+<span class='badge badge-default'>00:00:02:062</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=35</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">John</span>
+<span class="badge badge-pill badge-default">QUICKREGRESSION</span>
+<span class="badge badge-pill badge-default">DESKTOP</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:30:33 AM</td>
+        <td>
+          <span class='badge white-text blue'>Character Name:Trash Cat</span>
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>9:30:33 AM</td>
+        <td>
+          <span class='badge white-text green'>testShopPageCanBeClosed is passed</span>
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">QUICKREGRESSION</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>QUICKREGRESSION</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Play with obstacle in line</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>Resume and Pause in reply</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>Shop page loading functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>Premium popup close functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>Premium popup functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>Shop page close</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>5</span>
+</span>
+<p class="name">REGRESSION</p>
+<p class="duration text-sm">5 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>REGRESSION</h4>
+<span status="pass" class='badge log pass-bg'>5 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Test without avoiding obstacles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:41 AM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>Game stop functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Game play functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>Without obstacle in line</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>Home page load functionality</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">SMOKE</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>SMOKE</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Launch TrashCat app</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Verify Pause and Resume feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Check game pause and stop</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Verify if user can avoid the obstacles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Check game start functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>Start button functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>Start page functionality</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view device-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Device</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>18</span>
+</span>
+<p class="name">DESKTOP</p>
+<p class="duration text-sm">18 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>DESKTOP</h4>
+<span status="pass" class='badge log pass-bg'>18 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Launch TrashCat app</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Verify Pause and Resume feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Check game pause and stop</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Verify if user can avoid the obstacles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Test without avoiding obstacles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Check game start functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Play with obstacle in line</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>Resume and Pause in reply</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:41 AM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>Game stop functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Game play functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>Without obstacle in line</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>Start button functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>Start page functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>Home page load functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>Shop page loading functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>Premium popup close functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>Premium popup functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>Shop page close</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">Mike</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Mike</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>Resume and Pause in reply</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>Home page load functionality</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">John</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>John</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:37 AM</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Play with obstacle in line</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:41 AM</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>Game stop functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:42 AM</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Game play functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>Start page functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:27 AM</td>
+<td>
+<a href="#" class="linked" test-id='31' id='31'>Premium popup close functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:30 AM</td>
+<td>
+<a href="#" class="linked" test-id='33' id='33'>Premium popup functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:31 AM</td>
+<td>
+<a href="#" class="linked" test-id='35' id='35'>Shop page close</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>9</span>
+</span>
+<p class="name">Mandeep</p>
+<p class="duration text-sm">9 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Mandeep</h4>
+<span status="pass" class='badge log pass-bg'>9 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Launch TrashCat app</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:53 AM</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Verify Pause and Resume feature</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:55 AM</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Check game pause and stop</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:57 AM</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Verify if user can avoid the obstacles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:28:58 AM</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Test without avoiding obstacles</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Check game start functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:29:59 AM</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>Without obstacle in line</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>Start button functionality</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>09:30:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>Shop page loading functionality</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jul 7, 2023 09:28:20 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jul 7, 2023 09:30:34 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>35</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>35</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='24%'><b>18</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>55</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Launch TrashCat app":3.285,"Verify Pause and Resume feature":0.34,"Verify Pause and Resume feature":1.094,"Check game pause and stop":0.321,"Check game pause and stop":0.973,"Verify if user can avoid the obstacles":0.319,"Verify if user can avoid the obstacles":0.43,"Test without avoiding obstacles":0.324,"Test without avoiding obstacles":21.287,"Check game start functionality":0.321,"Check game start functionality":15.548,"Play with obstacle in line":0.335,"Play with obstacle in line":0.436,"Resume and Pause in reply":0.326,"Resume and Pause in reply":0.976,"Game stop functionality":0.349,"Game stop functionality":0.976,"Game play functionality":0.325,"Game play functionality":15.553,"Without obstacle in line":0.324,"Without obstacle in line":23.198,"Start button functionality":0,"Start button functionality":1.518,"Start page functionality":0,"Start page functionality":0.537,"Home page load functionality":0,"Home page load functionality":0.865,"Shop page loading functionality":0,"Shop page loading functionality":1.096,"Premium popup close functionality":0,"Premium popup close functionality":2.998,"Premium popup functionality":0,"Premium popup functionality":0.44,"Shop page close":0,"Shop page close":2.062
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Mike</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>John</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Mandeep</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>QUICKREGRESSION</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>REGRESSION</td>
+<td>5</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>SMOKE</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 device-container">
+<div class="card">
+<div class="card-header"><p>Device</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>DESKTOP</td>
+<td>18</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 35,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 18,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 55
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

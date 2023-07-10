@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 3173951688
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: themes/default
+      Dependencies: {}
+    Info_1:
+      Name: themes/nightime
+      Dependencies: {}
+    Info_2:
+      Name: characters/cat
+      Dependencies: {}
+    Info_3:
+      Name: characters/raccoon
+      Dependencies: {}
