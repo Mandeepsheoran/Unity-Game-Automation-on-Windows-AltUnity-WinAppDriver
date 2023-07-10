@@ -7,7 +7,7 @@ Test case be executed with Testng. Extent Report is used for reporting purpose. 
 from below location as we can not upload the current game file for mac due to file size constraint.
 Create a folder mac under project. The app is provided at https://altom.com/app/uploads/AltTester/TrashCat/TrashCatMacOS.app.zip and needs to be included under the mac/ folder.
 
-User can directly run the application using maven test, although shell script is also provided to do all the initial steps to run the test. 
+User can directly run the application using maven test, although shell script is also provided to do all the initial steps to run the test..
 
 ![image](https://github.com/Mandeepsheoran/Unity-Game-Automation-on-Windows-AltUnity-WinAppDriver/assets/70449523/cfdb97ee-4c36-455a-8d6e-393b091dfcde)
 
